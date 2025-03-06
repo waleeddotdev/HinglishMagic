@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "HinglishMagic",
+  "version": "1.0",
+  "description": "Convert Submagic captions to Hinglish with one click!",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": ["https://app.submagic.co/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://app.submagic.co/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HinglishMagic</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 15px;
+        width: 250px;
+        background-color: transparent;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      label,
+      input,
+      button {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      input {
+        padding: 5px;
+        border: none;
+        border-radius: 3px;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+
+      button {
+        padding: 8px;
+        background: #ff9800;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+
+      button:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+
+      #status {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #333;
+      }
+
+      #convert {
+        background: #007bff;
+      }
+
+      .orange-accent {
+        background: #ff9800;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 style="text-align: center; color: #ff9800;">Submagic Hinglish Converter</h3>
+    <label for="apiKey">Gemini API Key:</label>
+    <input type="password" id="apiKey" placeholder="Enter API Key" />
+    <button id="saveKey" class="orange-accent">Save API Key</button>
+
+    <hr style="border-color: #ccc;" />
+
+    <button id="convert" class="orange-accent">Convert Captions</button>
+    <p id="status"></p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
