@@ -6,12 +6,13 @@
   making them easier to read and understand.</b>  
 </p>  
 
+![Convert Hindi Captions to Hinglish – In One Click!](https://github.com/user-attachments/assets/b35e5e31-0f4b-4963-a1bc-ab0bbd9abf30)
+
+
 ---
 
 ## 🚀 Recognized by Submagic's Co-Founder  
 After sharing this extension on LinkedIn, **Tsi-fei CHAN**, the **CTO & Co-Founder of Submagic**, appreciated the work!  
-
-![image](https://github.com/user-attachments/assets/ab44a5f3-c240-42f9-9b9c-11fe74d758dd)
 
 https://github.com/user-attachments/assets/2cec6ebf-4756-44b7-a34e-f26f9fce53a9
 
