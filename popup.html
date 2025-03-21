@@ -1,74 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>HinglishMagic</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submagic Translator</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        padding: 15px;
-        width: 250px;
-        background-color: transparent;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-      }
-
-      label,
-      input,
-      button {
-        display: block;
-        margin-top: 10px;
-        width: 100%;
-      }
-
-      input {
-        padding: 5px;
-        border: none;
-        border-radius: 3px;
-        font-size: 16px;
-        box-sizing: border-box;
-      }
-
-      button {
-        padding: 8px;
-        background: #ff9800;
-        color: white;
-        border: none;
-        cursor: pointer;
-        border-radius: 3px;
-      }
-
-      button:disabled {
-        background: #ccc;
-        cursor: not-allowed;
-      }
-
-      #status {
-        margin-top: 10px;
-        font-size: 14px;
-        color: #333;
-      }
-
-      #convert {
-        background: #007bff;
-      }
-
-      .orange-accent {
-        background: #ff9800;
-        color: white;
-      }
+        body { font-family: Arial, sans-serif; width: 250px; padding: 15px; text-align: center; }
+        input, button { width: 100%; padding: 10px; margin-top: 10px; font-size: 14px; border-radius: 5px; }
+        input { border: 1px solid #ccc; }
+        button { cursor: pointer; border: none; color: white; }
+        .orange-accent { background-color: #ff8800; }
     </style>
-  </head>
-  <body>
-    <h3 style="text-align: center; color: #ff9800;">Submagic Hinglish Converter</h3>
-    <label for="apiKey">Gemini API Key:</label>
-    <input type="password" id="apiKey" placeholder="Enter API Key" />
-    <button id="saveKey" class="orange-accent">Save API Key</button>
-
-    <hr style="border-color: #ccc;" />
-
-    <button id="convert" class="orange-accent">Convert Captions</button>
-    <p id="status"></p>
+</head>
+<body>
+    <h3>Submagic Translator</h3>
+    <input type="text" id="apiKey" placeholder="Enter Gemini API Key">
+    <button id="convertCaptions" class="orange-accent">Convert Captions</button>
+    <button id="startApply" class="orange-accent">Start Applying Captions</button>
+    <button id="endApply" class="orange-accent" style="display: none;">End</button>
 
     <script src="popup.js"></script>
-  </body>
+</body>
 </html>
